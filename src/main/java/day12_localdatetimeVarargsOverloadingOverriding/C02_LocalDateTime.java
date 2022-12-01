@@ -51,14 +51,17 @@ public class C02_LocalDateTime {
         LocalTime time=LocalTime.now();
         DateTimeFormatter dtf= DateTimeFormatter.ofPattern("HH:mm");// Saat:(24 saat uzerinden istiyorsak H, 12 saat duzeninde istiyorsak h)
         System.out.println(dtf.format(time.plusHours(2)));//17:26
+
         DateTimeFormatter dtf2=DateTimeFormatter.ofPattern("hh:mm");
         System.out.println(dtf2.format(time.minusHours(1)));//02:26
+
         DateTimeFormatter dtf3=DateTimeFormatter.ofPattern("hh:mm:ss");// hh:12 saat dilimine gore 2 rakam olarak
         System.out.println(dtf3.format(time.minusHours(1)));//02:26:00
         //gun ay yil olarak yazdirma
         LocalDate date= LocalDate.now();
         DateTimeFormatter dtf4=DateTimeFormatter.ofPattern("dd-MMMM-yy");
         System.out.println(dtf4.format(date));//01-November-22
+
         DateTimeFormatter dtf5=DateTimeFormatter.ofPattern("MM-dd-yyyy");
         System.out.println(dtf5.format(date));//11-01-2022
         //Mevcut saat diliminden ileri geri gitme

@@ -9,7 +9,7 @@ public class ClassC03_Varargs {
         String sonuc="";
         for (String w:str
         ) {
-            sonuc+=w;
+            sonuc+=w+" ";
         }
         System.out.println(sonuc);
     }

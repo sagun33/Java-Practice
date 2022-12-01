@@ -1,6 +1,6 @@
 package day11;
 
-public class C05_Arrays {
+public class C05_MultidimensionalArrays {
     public static void main(String[] args) {
             /*
     Interwiew Sorusu
